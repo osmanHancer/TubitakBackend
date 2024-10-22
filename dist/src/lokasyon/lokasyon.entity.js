@@ -47,7 +47,6 @@ __decorate([
     __metadata("design:type", String)
 ], LokasyonEntity.prototype, "Envanter_Kodu", void 0);
 exports.LokasyonEntity = LokasyonEntity = __decorate([
-    (0, typeorm_1.Entity)('lokasyon'),
-    (0, typeorm_1.Unique)(["Enlem", "Boylam"])
+    (0, typeorm_1.Entity)('lokasyon')
 ], LokasyonEntity);
 //# sourceMappingURL=lokasyon.entity.js.map

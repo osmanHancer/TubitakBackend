@@ -21,11 +21,13 @@ let ArazicalismasiService = class ArazicalismasiService {
     constructor(araziRepository) {
         this.araziRepository = araziRepository;
     }
-    create(createArazicalismasiDto) {
-        return 'This action adds a new arazicalismasi';
+    async create(createArazicalismasiDto) {
+        const arazi = this.araziRepository.create(createArazicalismasiDto);
+        await this.araziRepository.save(arazi);
+        return arazi;
     }
-    findAll() {
-        return `This action returns all arazicalismasi`;
+    async findAll() {
+        return await this.araziRepository.find();
     }
     async findOne(id) {
         return await this.araziRepository.findOne({ where: { Envanter_Kodu: id } });

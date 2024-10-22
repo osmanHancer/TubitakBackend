@@ -14,7 +14,6 @@ const app_service_1 = require("./app.service");
 const nokta_module_1 = require("./noktalar/nokta.module");
 const lokasyon_module_1 = require("./lokasyon/lokasyon.module");
 const seyyahs_module_1 = require("./seyyahs/seyyahs.module");
-const yapilar_module_1 = require("./yapilar/yapilar.module");
 const yapimonografisi_module_1 = require("./yapimonografisi/yapimonografisi.module");
 const fileupload_module_1 = require("./fileupload/fileupload.module");
 const galeri_module_1 = require("./galeri/galeri.module");
@@ -42,7 +41,7 @@ exports.AppModule = AppModule = __decorate([
                 "timezone": "Z",
                 "synchronize": true,
                 "entities": ["dist/**/*.entity.js"]
-            }), nokta_module_1.NoktaModule, auth_module_1.AuthModule, lokasyon_module_1.LokasyonModule, user_module_1.UserModule, seyyahs_module_1.SeyyahsModule, mail_module_1.MailModule, yapilar_module_1.YapilarModule, yapimonografisi_module_1.YapimonografisiModule, fileupload_module_1.FileuploadModule, galeri_module_1.GaleriModule, makale_module_1.MakaleModule, seyahatname_module_1.SeyahatnameModule, sahacal_smas__module_1.SahacalısmasıModule, saha_ad_mlar__module_1.SahaAdımlarıModule, arazicalismasi_module_1.ArazicalismasiModule, allcordinats_module_1.AllcordinatsModule],
+            }), nokta_module_1.NoktaModule, auth_module_1.AuthModule, lokasyon_module_1.LokasyonModule, user_module_1.UserModule, seyyahs_module_1.SeyyahsModule, mail_module_1.MailModule, yapimonografisi_module_1.YapimonografisiModule, fileupload_module_1.FileuploadModule, galeri_module_1.GaleriModule, makale_module_1.MakaleModule, seyahatname_module_1.SeyahatnameModule, sahacal_smas__module_1.SahacalısmasıModule, saha_ad_mlar__module_1.SahaAdımlarıModule, arazicalismasi_module_1.ArazicalismasiModule, allcordinats_module_1.AllcordinatsModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

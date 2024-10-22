@@ -43,7 +43,7 @@ export class CreateArazicalismasiDto {
     Mimari_Ozellikler: string;
 
 
-    Yasama_Ve_Eski_Kullanima_Dair_İzler: string;
+    Yasama_Ve_Eski_Kullanima_Dair_Izler: string;
 
 
     Yapim_Teknigi_Ve_Malzeme: string;

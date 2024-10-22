@@ -1,7 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn, Unique } from "typeorm";
 
 @Entity('lokasyon')
-@Unique(["Enlem", "Boylam"])  // Enlem ve Boylam çiftini benzersiz yapar
 export class LokasyonEntity {
 
   @Column()

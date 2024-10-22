@@ -69,7 +69,7 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)('text'),
     __metadata("design:type", String)
-], ArazicalismasiEntity.prototype, "Yasama_Ve_Eski_Kullanima_Dair_\u0130zler", void 0);
+], ArazicalismasiEntity.prototype, "Yasama_Ve_Eski_Kullanima_Dair_Izler", void 0);
 __decorate([
     (0, typeorm_1.Column)('text'),
     __metadata("design:type", String)

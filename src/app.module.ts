@@ -5,7 +5,6 @@ import { AppService } from './app.service';
 import { NoktaModule } from './noktalar/nokta.module';
 import { LokasyonModule } from './lokasyon/lokasyon.module';
 import { SeyyahsModule } from './seyyahs/seyyahs.module';
-import { YapilarModule } from './yapilar/yapilar.module';
 import { YapimonografisiModule } from './yapimonografisi/yapimonografisi.module';
 import { FileuploadModule } from './fileupload/fileupload.module';
 import { GaleriModule } from './galeri/galeri.module';
@@ -31,7 +30,7 @@ import { AuthModule } from './auth/auth.module';
   	"synchronize": true,
   	"entities": ["dist/**/*.entity.js"]
 	
-  }), NoktaModule,AuthModule, LokasyonModule,UserModule, SeyyahsModule,MailModule,YapilarModule, YapimonografisiModule, FileuploadModule, GaleriModule,MakaleModule, SeyahatnameModule, SahacalısmasıModule, SahaAdımlarıModule, ArazicalismasiModule, AllcordinatsModule],
+  }), NoktaModule,AuthModule, LokasyonModule,UserModule, SeyyahsModule,MailModule, YapimonografisiModule, FileuploadModule, GaleriModule,MakaleModule, SeyahatnameModule, SahacalısmasıModule, SahaAdımlarıModule, ArazicalismasiModule, AllcordinatsModule],
   controllers: [AppController],
   providers: [AppService],
 })

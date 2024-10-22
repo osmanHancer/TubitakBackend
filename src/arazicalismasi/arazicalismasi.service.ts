@@ -13,12 +13,14 @@ export class ArazicalismasiService {
     private araziRepository: Repository<CreateArazicalismasiDto>
   ) {}
   
-  create(createArazicalismasiDto: CreateArazicalismasiDto) {
-    return 'This action adds a new arazicalismasi';
+  async create(createArazicalismasiDto: CreateArazicalismasiDto) {
+    const arazi = this.araziRepository.create(createArazicalismasiDto);
+    await this.araziRepository.save(arazi);
+    return arazi;
   }
 
-  findAll() {
-    return `This action returns all arazicalismasi`;
+  async findAll() {
+    return await this.araziRepository.find();
   }
 
   async findOne(id: string) {

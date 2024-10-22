@@ -12,7 +12,7 @@ export declare class CreateArazicalismasiDto {
     Durumu: string;
     Bugunki_Kullanimi: string;
     Mimari_Ozellikler: string;
-    Yasama_Ve_Eski_Kullanima_Dair_İzler: string;
+    Yasama_Ve_Eski_Kullanima_Dair_Izler: string;
     Yapim_Teknigi_Ve_Malzeme: string;
     Literatur_Ve_Arsiv_Kaynaklarindan_Notlar: string;
     Kaynakca: string;

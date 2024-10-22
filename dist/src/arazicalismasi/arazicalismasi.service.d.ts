@@ -3,8 +3,8 @@ import { Repository } from 'typeorm';
 export declare class ArazicalismasiService {
     private araziRepository;
     constructor(araziRepository: Repository<CreateArazicalismasiDto>);
-    create(createArazicalismasiDto: CreateArazicalismasiDto): string;
-    findAll(): string;
+    create(createArazicalismasiDto: CreateArazicalismasiDto): Promise<CreateArazicalismasiDto>;
+    findAll(): Promise<CreateArazicalismasiDto[]>;
     findOne(id: string): Promise<CreateArazicalismasiDto>;
     remove(id: number): string;
 }
