@@ -9,8 +9,8 @@ import { YapimonografisiModule } from './yapimonografisi/yapimonografisi.module'
 import { FileuploadModule } from './fileupload/fileupload.module';
 import { GaleriModule } from './galeri/galeri.module';
 import { MakaleModule } from './makale/makale.module';
-import { SahacalısmasıModule } from './sahacalısması/sahacalısması.module';
-import { SahaAdımlarıModule } from './saha-adımları/saha-adımları.module';
+import { SahacalısmasıModule } from './sahacalismasi/sahacalismasi.module';
+import { SahaAdımlarıModule } from './saha-adimlari/saha-adimlari.module';
 import { SeyahatnameModule } from './seyahatname/seyahatname.module';
 import { ArazicalismasiModule } from './arazicalismasi/arazicalismasi.module';
 import { AllcordinatsModule } from './allcordinats/allcordinats.module';

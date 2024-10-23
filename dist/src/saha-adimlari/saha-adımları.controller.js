@@ -11,12 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var _a, _b, _c;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SahaAdımlarıController = void 0;
 const common_1 = require("@nestjs/common");
 const saha_ad_mlar__service_1 = require("./saha-ad\u0131mlar\u0131.service");
-const create_saha_ad_mlar__dto_1 = require("./create-saha-ad\u0131mlar\u0131.dto");
+const create_saha_adimlari_dto_1 = require("./create-saha-adimlari.dto");
 let SahaAdımlarıController = class SahaAdımlarıController {
     constructor(sahaAdımlarıService) {
         this.sahaAdımlarıService = sahaAdımlarıService;
@@ -53,14 +52,14 @@ __decorate([
     (0, common_1.Post)(),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [typeof (_a = typeof create_saha_ad_mlar__dto_1.SahaAdımlarıDto !== "undefined" && create_saha_ad_mlar__dto_1.SahaAdımlarıDto) === "function" ? _a : Object]),
+    __metadata("design:paramtypes", [create_saha_adimlari_dto_1.SahaAdımlarıDto]),
     __metadata("design:returntype", void 0)
 ], SahaAdımlarıController.prototype, "create", null);
 __decorate([
     (0, common_1.Post)("delete"),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [typeof (_b = typeof create_saha_ad_mlar__dto_1.SahaAdımlarıDto !== "undefined" && create_saha_ad_mlar__dto_1.SahaAdımlarıDto) === "function" ? _b : Object]),
+    __metadata("design:paramtypes", [create_saha_adimlari_dto_1.SahaAdımlarıDto]),
     __metadata("design:returntype", void 0)
 ], SahaAdımlarıController.prototype, "delete", null);
 __decorate([
@@ -81,7 +80,7 @@ __decorate([
     __param(0, (0, common_1.Param)('id')),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, typeof (_c = typeof create_saha_ad_mlar__dto_1.SahaAdımlarıDto !== "undefined" && create_saha_ad_mlar__dto_1.SahaAdımlarıDto) === "function" ? _c : Object]),
+    __metadata("design:paramtypes", [String, create_saha_adimlari_dto_1.SahaAdımlarıDto]),
     __metadata("design:returntype", void 0)
 ], SahaAdımlarıController.prototype, "update", null);
 exports.SahaAdımlarıController = SahaAdımlarıController = __decorate([

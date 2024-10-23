@@ -18,8 +18,8 @@ const yapimonografisi_module_1 = require("./yapimonografisi/yapimonografisi.modu
 const fileupload_module_1 = require("./fileupload/fileupload.module");
 const galeri_module_1 = require("./galeri/galeri.module");
 const makale_module_1 = require("./makale/makale.module");
-const sahacal_smas__module_1 = require("./sahacal\u0131smas\u0131/sahacal\u0131smas\u0131.module");
-const saha_ad_mlar__module_1 = require("./saha-ad\u0131mlar\u0131/saha-ad\u0131mlar\u0131.module");
+const sahacalismasi_module_1 = require("./sahacalismasi/sahacalismasi.module");
+const saha_adimlari_module_1 = require("./saha-adimlari/saha-adimlari.module");
 const seyahatname_module_1 = require("./seyahatname/seyahatname.module");
 const arazicalismasi_module_1 = require("./arazicalismasi/arazicalismasi.module");
 const allcordinats_module_1 = require("./allcordinats/allcordinats.module");
@@ -41,7 +41,7 @@ exports.AppModule = AppModule = __decorate([
                 "timezone": "Z",
                 "synchronize": true,
                 "entities": ["dist/**/*.entity.js"]
-            }), nokta_module_1.NoktaModule, auth_module_1.AuthModule, lokasyon_module_1.LokasyonModule, user_module_1.UserModule, seyyahs_module_1.SeyyahsModule, mail_module_1.MailModule, yapimonografisi_module_1.YapimonografisiModule, fileupload_module_1.FileuploadModule, galeri_module_1.GaleriModule, makale_module_1.MakaleModule, seyahatname_module_1.SeyahatnameModule, sahacal_smas__module_1.SahacalısmasıModule, saha_ad_mlar__module_1.SahaAdımlarıModule, arazicalismasi_module_1.ArazicalismasiModule, allcordinats_module_1.AllcordinatsModule],
+            }), nokta_module_1.NoktaModule, auth_module_1.AuthModule, lokasyon_module_1.LokasyonModule, user_module_1.UserModule, seyyahs_module_1.SeyyahsModule, mail_module_1.MailModule, yapimonografisi_module_1.YapimonografisiModule, fileupload_module_1.FileuploadModule, galeri_module_1.GaleriModule, makale_module_1.MakaleModule, seyahatname_module_1.SeyahatnameModule, sahacalismasi_module_1.SahacalısmasıModule, saha_adimlari_module_1.SahaAdımlarıModule, arazicalismasi_module_1.ArazicalismasiModule, allcordinats_module_1.AllcordinatsModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
