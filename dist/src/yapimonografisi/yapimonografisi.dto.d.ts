@@ -12,4 +12,5 @@ export interface YapiMonografisiDTO {
     boylam: string;
     yuzyil: string;
     yapi_ismi: string;
+    yapituru: string;
 }

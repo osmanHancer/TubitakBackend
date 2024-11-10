@@ -28,6 +28,8 @@ export interface YapiMonografisiDTO {
 
     yapi_ismi: string;
 
+    yapituru: string;
+
 
 
 

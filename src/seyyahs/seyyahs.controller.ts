@@ -12,7 +12,6 @@ import {
 
 import { SeyyahsService } from './seyyahs.service';
 import { SeyyahDTO } from './seyyahs.dto';
-import { AuthGuard } from '@nestjs/passport';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 @UseGuards(JwtAuthGuard)

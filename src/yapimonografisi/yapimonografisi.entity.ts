@@ -38,6 +38,10 @@ export class YapiMonografisiEntity {
   
   @Column()
   yuzyil: string;
+  
+  
+  @Column()
+  yapituru: string;
 
   
   @PrimaryColumn()
