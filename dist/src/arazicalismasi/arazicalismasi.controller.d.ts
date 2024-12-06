@@ -6,5 +6,5 @@ export declare class ArazicalismasiController {
     create(createArazicalismasiDto: CreateArazicalismasiDto): Promise<CreateArazicalismasiDto>;
     findAll(): Promise<CreateArazicalismasiDto[]>;
     findOne(id: string): Promise<CreateArazicalismasiDto>;
-    remove(id: string): string;
+    remove(envanter_kodu: string): Promise<import("typeorm").DeleteResult>;
 }

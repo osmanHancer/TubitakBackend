@@ -32,8 +32,8 @@ let ArazicalismasiService = class ArazicalismasiService {
     async findOne(id) {
         return await this.araziRepository.findOne({ where: { Envanter_Kodu: id } });
     }
-    remove(id) {
-        return `This action removes a #${id} arazicalismasi`;
+    async remove(envanter_kodu) {
+        return await this.araziRepository.delete({ Envanter_Kodu: envanter_kodu });
     }
 };
 exports.ArazicalismasiService = ArazicalismasiService;

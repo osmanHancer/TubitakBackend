@@ -23,8 +23,8 @@ export class ArazicalismasiController {
 
 
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.arazicalismasiService.remove(+id);
+  @Post('delete/:envanter_kodu')
+  remove(@Param('envanter_kodu') envanter_kodu: string) {
+    return this.arazicalismasiService.remove(envanter_kodu);
   }
 }

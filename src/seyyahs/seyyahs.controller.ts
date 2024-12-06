@@ -14,7 +14,6 @@ import { SeyyahsService } from './seyyahs.service';
 import { SeyyahDTO } from './seyyahs.dto';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
-@UseGuards(JwtAuthGuard)
 @Controller('seyyahs')
 export class SeyyahsController {
 
@@ -30,6 +29,7 @@ export class SeyyahsController {
       users
     };
   }
+@UseGuards(JwtAuthGuard)
   @Get(":id")
   async readUser(@Param('id') id: number) {
     const lokasyon = await this.seyyahsService.read(id);
@@ -49,6 +49,7 @@ export class SeyyahsController {
   //   };
 
   // }
+@UseGuards(JwtAuthGuard)
   @Post("delete/:id")
   async deleteUser(@Param('id') id: number) {
 
@@ -58,6 +59,7 @@ export class SeyyahsController {
       message: 'User delete successfully',
     };
   }
+@UseGuards(JwtAuthGuard)
   @Post()
   async createUser(@Body() data: SeyyahDTO) {
 

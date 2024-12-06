@@ -60,6 +60,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SeyyahsController.prototype, "readAllUsers", null);
 __decorate([
+    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     (0, common_1.Get)(":id"),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
@@ -67,6 +68,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SeyyahsController.prototype, "readUser", null);
 __decorate([
+    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     (0, common_1.Post)("delete/:id"),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
@@ -74,6 +76,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SeyyahsController.prototype, "deleteUser", null);
 __decorate([
+    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     (0, common_1.Post)(),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
@@ -81,7 +84,6 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SeyyahsController.prototype, "createUser", null);
 exports.SeyyahsController = SeyyahsController = __decorate([
-    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     (0, common_1.Controller)('seyyahs'),
     __metadata("design:paramtypes", [seyyahs_service_1.SeyyahsService])
 ], SeyyahsController);

@@ -29,7 +29,7 @@ export class ArazicalismasiService {
 
  
 
-  remove(id: number) {
-    return `This action removes a #${id} arazicalismasi`;
+  async remove(envanter_kodu: string) {
+    return await this.araziRepository.delete({Envanter_Kodu:envanter_kodu});
   }
 }
