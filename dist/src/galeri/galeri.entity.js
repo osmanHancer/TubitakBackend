@@ -17,7 +17,7 @@ exports.GaleriEntity = GaleriEntity;
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], GaleriEntity.prototype, "metin", void 0);
+], GaleriEntity.prototype, "envanterNo", void 0);
 __decorate([
     (0, typeorm_1.PrimaryColumn)(),
     __metadata("design:type", String)
@@ -25,7 +25,7 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], GaleriEntity.prototype, "lokasyonId", void 0);
+], GaleriEntity.prototype, "metin", void 0);
 exports.GaleriEntity = GaleriEntity = __decorate([
     (0, typeorm_1.Entity)('galeri')
 ], GaleriEntity);

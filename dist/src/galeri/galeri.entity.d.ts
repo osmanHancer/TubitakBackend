@@ -1,5 +1,5 @@
 export declare class GaleriEntity {
-    metin: string;
+    envanterNo: string;
     imgname: string;
-    lokasyonId: string;
+    metin: string;
 }

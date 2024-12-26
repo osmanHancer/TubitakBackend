@@ -17,6 +17,7 @@ import { AllcordinatsModule } from './allcordinats/allcordinats.module';
 import { MailModule } from './mail/mail.module';
 import { UserModule } from './users/user.module';
 import { AuthModule } from './auth/auth.module';
+import { EditorModule } from './editor/editor.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -30,7 +31,7 @@ import { AuthModule } from './auth/auth.module';
   	"synchronize": true,
   	"entities": ["dist/**/*.entity.js"]
 	
-  }), NoktaModule,AuthModule, LokasyonModule,UserModule, SeyyahsModule,MailModule, YapimonografisiModule, FileuploadModule, GaleriModule,MakaleModule, SeyahatnameModule, SahacalısmasıModule, SahaAdımlarıModule, ArazicalismasiModule, AllcordinatsModule],
+  }), NoktaModule,AuthModule, LokasyonModule,UserModule, SeyyahsModule,MailModule, YapimonografisiModule, FileuploadModule, GaleriModule,MakaleModule, SeyahatnameModule, SahacalısmasıModule, SahaAdımlarıModule, ArazicalismasiModule, AllcordinatsModule,EditorModule],
   controllers: [AppController],
   providers: [AppService],
 })

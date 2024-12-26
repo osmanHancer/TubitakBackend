@@ -4,14 +4,17 @@ import { Entity, Column, PrimaryGeneratedColumn, PrimaryColumn } from "typeorm";
 export class GaleriEntity {
 
     @Column()
-    metin: string;
-  
+    envanterNo:string
+
     @PrimaryColumn()
     imgname: string;
 
-
     @Column()
-    lokasyonId:string
+    metin: string;
+  
+
+
+ 
 }
 
 

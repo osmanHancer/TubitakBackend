@@ -33,7 +33,7 @@ let GaleriService = class GaleriService {
         return await this.usersRepository.findOne({ where: { imgname: imgname } });
     }
     async readAllId(ıd) {
-        return await this.usersRepository.find({ where: { lokasyonId: ıd } });
+        return await this.usersRepository.find({ where: { envanterNo: ıd } });
     }
     async delete(imgname) {
         await this.usersRepository.delete(imgname);

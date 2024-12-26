@@ -11,9 +11,6 @@ const common_1 = require("@nestjs/common");
 const fs_1 = require("fs");
 const path = require("path");
 let AllcordinatsService = class AllcordinatsService {
-    create(createAllcordinatDto) {
-        return 'This action adds a new allcordinat';
-    }
     findAll() {
         return `This action returns all allcordinats`;
     }
@@ -28,12 +25,6 @@ let AllcordinatsService = class AllcordinatsService {
             console.error('Dosya okunurken hata meydana geldi:', error);
             throw new Error('Dosya okunamadı');
         }
-    }
-    update(id, updateAllcordinatDto) {
-        return `This action updates a #${id} allcordinat`;
-    }
-    remove(id) {
-        return `This action removes a #${id} allcordinat`;
     }
 };
 exports.AllcordinatsService = AllcordinatsService;

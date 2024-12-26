@@ -28,7 +28,7 @@ export class GaleriService {
       }
       
       async readAllId(ıd:any) {
-        return await this.usersRepository.find({ where: { lokasyonId: ıd } });
+        return await this.usersRepository.find({ where: { envanterNo: ıd } });
       }
 
       async delete(imgname:string){

@@ -59,10 +59,9 @@ export class SeyyahsController {
       message: 'User delete successfully',
     };
   }
-@UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard)
   @Post()
   async createUser(@Body() data: SeyyahDTO) {
-
     await this.seyyahsService.create(data)
     return {
       statusCode: HttpStatus.OK,

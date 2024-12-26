@@ -1,12 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { AllcordinatDto } from './create-allcordinat.dto';
 import { promises as fs } from 'fs';
 import * as path from 'path';
 @Injectable()
 export class AllcordinatsService {
-  create(createAllcordinatDto: AllcordinatDto) {
-    return 'This action adds a new allcordinat';
-  }
+
 
   findAll() {
     return `This action returns all allcordinats`;
@@ -28,11 +25,5 @@ export class AllcordinatsService {
       throw new Error('Dosya okunamadı');
     }
   }
-  update(id: number, updateAllcordinatDto: AllcordinatDto) {
-    return `This action updates a #${id} allcordinat`;
-  }
 
-  remove(id: number) {
-    return `This action removes a #${id} allcordinat`;
-  }
 }
