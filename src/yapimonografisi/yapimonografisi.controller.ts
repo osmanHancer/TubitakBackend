@@ -44,4 +44,13 @@ export class YapimonografisiController {
         message: 'User create successfully',
       };
     }
+
+    @Post('/delete/:id')
+    async deleteUser(@Param('id') id: string) {
+      await this.YapimonografisiService.delete(id);
+      return {
+        statusCode: HttpStatus.OK,
+        message: 'User deleted successfully',
+      };
+    }
 }

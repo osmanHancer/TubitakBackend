@@ -43,6 +43,9 @@ export class YapiMonografisiEntity {
   @Column()
   yapituru: string;
 
+  @Column()
+  seyahatnamede_gecen: string;
+
   
   @PrimaryColumn()
   yapi_ismi: string;

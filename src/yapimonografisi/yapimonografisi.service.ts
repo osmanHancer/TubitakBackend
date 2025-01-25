@@ -30,4 +30,9 @@ export class YapimonografisiService {
     return yapimonografisi;
     
   }
+
+  async delete(id:string) {
+    console.log(id)
+    return await this.yapimonografisiRepository.delete(id);
+  }
 }

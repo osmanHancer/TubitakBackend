@@ -18,4 +18,8 @@ export declare class YapimonografisiController {
         statusCode: HttpStatus;
         message: string;
     }>;
+    deleteUser(id: string): Promise<{
+        statusCode: HttpStatus;
+        message: string;
+    }>;
 }

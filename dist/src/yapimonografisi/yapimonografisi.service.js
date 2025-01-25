@@ -32,6 +32,10 @@ let YapimonografisiService = class YapimonografisiService {
         await this.yapimonografisiRepository.save(data);
         return yapimonografisi;
     }
+    async delete(id) {
+        console.log(id);
+        return await this.yapimonografisiRepository.delete(id);
+    }
 };
 exports.YapimonografisiService = YapimonografisiService;
 exports.YapimonografisiService = YapimonografisiService = __decorate([

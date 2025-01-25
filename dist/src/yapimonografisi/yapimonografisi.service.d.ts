@@ -7,4 +7,5 @@ export declare class YapimonografisiService {
     read(yapi_ismi: string): Promise<YapiMonografisiEntity>;
     readAll(): Promise<YapiMonografisiEntity[]>;
     create(data: YapiMonografisiDTO): Promise<YapiMonografisiEntity>;
+    delete(id: string): Promise<import("typeorm").DeleteResult>;
 }

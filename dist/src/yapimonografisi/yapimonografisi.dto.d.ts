@@ -13,4 +13,5 @@ export interface YapiMonografisiDTO {
     yuzyil: string;
     yapi_ismi: string;
     yapituru: string;
+    seyahatnamede_gecen: string;
 }

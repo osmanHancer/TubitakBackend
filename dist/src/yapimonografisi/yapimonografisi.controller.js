@@ -43,6 +43,13 @@ let YapimonografisiController = class YapimonografisiController {
             message: 'User create successfully',
         };
     }
+    async deleteUser(id) {
+        await this.YapimonografisiService.delete(id);
+        return {
+            statusCode: common_1.HttpStatus.OK,
+            message: 'User deleted successfully',
+        };
+    }
 };
 exports.YapimonografisiController = YapimonografisiController;
 __decorate([
@@ -65,6 +72,13 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], YapimonografisiController.prototype, "createUser", null);
+__decorate([
+    (0, common_1.Post)('/delete/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], YapimonografisiController.prototype, "deleteUser", null);
 exports.YapimonografisiController = YapimonografisiController = __decorate([
     (0, common_1.Controller)('yapimonografisi'),
     __metadata("design:paramtypes", [yapimonografisi_service_1.YapimonografisiService])

@@ -12,5 +12,6 @@ export declare class YapiMonografisiEntity {
     boylam: string;
     yuzyil: string;
     yapituru: string;
+    seyahatnamede_gecen: string;
     yapi_ismi: string;
 }

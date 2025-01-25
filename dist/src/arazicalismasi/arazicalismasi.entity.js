@@ -73,23 +73,15 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)('text'),
     __metadata("design:type", String)
-], ArazicalismasiEntity.prototype, "Yapim_Teknigi_Ve_Malzeme", void 0);
+], ArazicalismasiEntity.prototype, "Literatur_Ve_Arsiv_Kaynaklarindan_Notlar", void 0);
 __decorate([
     (0, typeorm_1.Column)('text'),
     __metadata("design:type", String)
-], ArazicalismasiEntity.prototype, "Literatur_Ve_Arsiv_Kaynaklarindan_Notlar", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ArazicalismasiEntity.prototype, "Kaynakca", void 0);
+], ArazicalismasiEntity.prototype, "yapi_monografisi_var_yok", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], ArazicalismasiEntity.prototype, "Arazi_Calismasi_Tarihi", void 0);
-__decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], ArazicalismasiEntity.prototype, "Arazi_Calismasi_Ekibi", void 0);
 exports.ArazicalismasiEntity = ArazicalismasiEntity = __decorate([
     (0, typeorm_1.Entity)('arazicalismasi')
 ], ArazicalismasiEntity);

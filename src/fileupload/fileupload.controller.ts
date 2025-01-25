@@ -36,7 +36,7 @@ import {
     @UseInterceptors(
       FileInterceptor('file', {
         storage: diskStorage({
-          destination: './uploads',  // Dosyaların kaydedileceği dizin
+          destination: './uploads', 
           filename: (req, file, cb) => {
            file.originalname = Buffer.from(file.originalname, 'latin1').toString('utf8');
             let filename = file.originalname;

@@ -67,6 +67,10 @@ __decorate([
     __metadata("design:type", String)
 ], YapiMonografisiEntity.prototype, "yapituru", void 0);
 __decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], YapiMonografisiEntity.prototype, "seyahatnamede_gecen", void 0);
+__decorate([
     (0, typeorm_1.PrimaryColumn)(),
     __metadata("design:type", String)
 ], YapiMonografisiEntity.prototype, "yapi_ismi", void 0);

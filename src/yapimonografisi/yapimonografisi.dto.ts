@@ -30,6 +30,9 @@ export interface YapiMonografisiDTO {
 
     yapituru: string;
 
+    seyahatnamede_gecen: string;
+
+
 
 
 

@@ -47,19 +47,15 @@ export class ArazicalismasiEntity {
     Yasama_Ve_Eski_Kullanima_Dair_Izler: string;
 
     @Column('text')
-    Yapim_Teknigi_Ve_Malzeme: string;
-
-    @Column('text')
     Literatur_Ve_Arsiv_Kaynaklarindan_Notlar: string;
 
-    @Column()
-    Kaynakca: string;
+    @Column('text')
+    yapi_monografisi_var_yok: string;
 
     @Column()
     Arazi_Calismasi_Tarihi: string;
 
-    @Column()
-    Arazi_Calismasi_Ekibi: string;
+
 
 
 }

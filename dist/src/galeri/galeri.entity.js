@@ -15,13 +15,13 @@ let GaleriEntity = class GaleriEntity {
 };
 exports.GaleriEntity = GaleriEntity;
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", String)
-], GaleriEntity.prototype, "envanterNo", void 0);
-__decorate([
     (0, typeorm_1.PrimaryColumn)(),
     __metadata("design:type", String)
 ], GaleriEntity.prototype, "imgname", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], GaleriEntity.prototype, "envanterNo", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
