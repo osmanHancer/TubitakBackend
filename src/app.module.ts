@@ -18,6 +18,8 @@ import { MailModule } from './mail/mail.module';
 import { UserModule } from './users/user.module';
 import { AuthModule } from './auth/auth.module';
 import { EditorModule } from './editor/editor.module';
+import { KaynakcaModule } from './kaynakca/kaynakca.module';
+import { CiktiModule } from './ciktilar/cikti.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -31,7 +33,7 @@ import { EditorModule } from './editor/editor.module';
   	"synchronize": true,
   	"entities": ["dist/**/*.entity.js"]
 	
-  }), NoktaModule,AuthModule, LokasyonModule,UserModule, SeyyahsModule,MailModule, YapimonografisiModule, FileuploadModule, GaleriModule,MakaleModule, SeyahatnameModule, SahacalısmasıModule, SahaAdımlarıModule, ArazicalismasiModule, AllcordinatsModule,EditorModule],
+  }), NoktaModule,AuthModule, LokasyonModule,CiktiModule,UserModule,KaynakcaModule, SeyyahsModule,MailModule, YapimonografisiModule, FileuploadModule, GaleriModule,MakaleModule, SeyahatnameModule, SahacalısmasıModule, SahaAdımlarıModule, ArazicalismasiModule, AllcordinatsModule,EditorModule],
   controllers: [AppController],
   providers: [AppService],
 })
